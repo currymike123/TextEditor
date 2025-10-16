@@ -72,66 +72,70 @@
 
 ### Methods
 
-#### void show()
-- **Description:** Displays the editor window.
-- **Parameters:** None
-- **Returns:** Nothing
+<small>
 
-#### String getText()
-- **Description:** Gets the current text from the editor.
-- **Parameters:** None
-- **Returns:** The editor's text as a String.
+#### `void show()`
+- **Description:** Displays the editor window.  
+- **Parameters:** None  
+- **Returns:** Nothing  
 
-#### void setText(String text)
-- **Description:** Sets the editor's text.
+#### `String getText()`
+- **Description:** Gets the current text from the editor.  
+- **Parameters:** None  
+- **Returns:** The editor’s text as a `String`  
+
+#### `void setText(String text)`
+- **Description:** Sets the editor’s text.  
 - **Parameters:**  
-  - `text`: String to set as the editor's text.
-- **Returns:** Nothing
+  - `text`: String to set as the editor’s text  
+- **Returns:** Nothing  
 
-#### void clearText()
-- **Description:** Clears all text from the editor.
-- **Parameters:** None
-- **Returns:** Nothing
+#### `void clearText()`
+- **Description:** Clears all text from the editor.  
+- **Parameters:** None  
+- **Returns:** Nothing  
 
-#### void addButton(String label, Runnable action)
-- **Description:** Adds a button to the editor.
+#### `void addButton(String label, Runnable action)`
+- **Description:** Adds a button to the editor.  
 - **Parameters:**  
-  - `label`: Button text (String)  
-  - `action`: Code to run when button is clicked (Runnable)
-- **Returns:** Nothing
+  - `label`: Button text (`String`)  
+  - `action`: Code to run when button is clicked (`Runnable`)  
+- **Returns:** Nothing  
 
-#### void alert(String message)
-- **Description:** Shows a message dialog.
+#### `void alert(String message)`
+- **Description:** Shows a message dialog.  
 - **Parameters:**  
-  - `message`: Message to display (String)
-- **Returns:** Nothing
+  - `message`: Message to display (`String`)  
+- **Returns:** Nothing  
 
-#### String prompt(String message)
-- **Description:** Prompts the user for input.
+#### `String prompt(String message)`
+- **Description:** Prompts the user for input.  
 - **Parameters:**  
-  - `message`: Prompt message (String)
-- **Returns:** User input as a String
+  - `message`: Prompt message (`String`)  
+- **Returns:** User input as a `String`  
 
-#### void highlight(String term)
-- **Description:** Highlights all matches of the term.
+#### `void highlight(String term)`
+- **Description:** Highlights all matches of the term.  
 - **Parameters:**  
-  - `term`: Term to highlight (String)
-- **Returns:** Nothing
+  - `term`: Term to highlight (`String`)  
+- **Returns:** Nothing  
 
-#### void replace(String target, String replacement)
-- **Description:** Replaces all occurrences of `target` with `replacement`.
+#### `void replace(String target, String replacement)`
+- **Description:** Replaces all occurrences of `target` with `replacement`.  
 - **Parameters:**  
-  - `target`: Text to replace (String)  
-  - `replacement`: Replacement text (String)
-- **Returns:** Nothing
+  - `target`: Text to replace (`String`)  
+  - `replacement`: Replacement text (`String`)  
+- **Returns:** Nothing  
 
-#### Text Utility Class
-- **Description:** Provides utility methods for text manipulation.
-- **Methods:**
-  - `String[] words(String text)`: Splits the input text into an array of words.
+#### `Text` Utility Class
+- **Description:** Provides utility methods for text manipulation.  
+- **Methods:**  
+  - `String[] words(String text)`  
     - **Parameters:**  
-      - `text`: Input text (String)
-    - **Returns:** Array of words (String[])
+      - `text`: Input text (`String`)  
+    - **Returns:** Array of words (`String[]`)  
+
+</small>
 
 ---
 
@@ -176,7 +180,7 @@ javac is the Java compiler, `-d bin` specifies the output directory for compiled
 
 When you add your data structure classes (e.g., `ArrayList`, `LinkedList`, `BST`), include them in the compile command as well.
 
-## Run the Program
+### Run the Program
 
 To run the program, use the following command:
 
