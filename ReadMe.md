@@ -66,62 +66,62 @@
 +-----------------------------------------------+
 ```
 
-## Methods
+### Methods
 
-### void show()
+#### void show()
 - **Description:** Displays the editor window.
 - **Parameters:** None
 - **Returns:** Nothing
 
-### String getText()
+#### String getText()
 - **Description:** Gets the current text from the editor.
 - **Parameters:** None
 - **Returns:** The editor's text as a String.
 
-### void setText(String text)
+#### void setText(String text)
 - **Description:** Sets the editor's text.
 - **Parameters:**  
   - `text`: String to set as the editor's text.
 - **Returns:** Nothing
 
-### void clearText()
+#### void clearText()
 - **Description:** Clears all text from the editor.
 - **Parameters:** None
 - **Returns:** Nothing
 
-### void addButton(String label, Runnable action)
+#### void addButton(String label, Runnable action)
 - **Description:** Adds a button to the editor.
 - **Parameters:**  
   - `label`: Button text (String)  
   - `action`: Code to run when button is clicked (Runnable)
 - **Returns:** Nothing
 
-### void alert(String message)
+#### void alert(String message)
 - **Description:** Shows a message dialog.
 - **Parameters:**  
   - `message`: Message to display (String)
 - **Returns:** Nothing
 
-### String prompt(String message)
+#### String prompt(String message)
 - **Description:** Prompts the user for input.
 - **Parameters:**  
   - `message`: Prompt message (String)
 - **Returns:** User input as a String
 
-### void highlight(String term)
+#### void highlight(String term)
 - **Description:** Highlights all matches of the term.
 - **Parameters:**  
   - `term`: Term to highlight (String)
 - **Returns:** Nothing
 
-### void replace(String target, String replacement)
+#### void replace(String target, String replacement)
 - **Description:** Replaces all occurrences of `target` with `replacement`.
 - **Parameters:**  
   - `target`: Text to replace (String)  
   - `replacement`: Replacement text (String)
 - **Returns:** Nothing
 
-### Text Utility Class
+#### Text Utility Class
 - **Description:** Provides utility methods for text manipulation.
 - **Methods:**
   - `String[] words(String text)`: Splits the input text into an array of words.
