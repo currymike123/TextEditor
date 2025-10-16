@@ -66,33 +66,6 @@
 +-----------------------------------------------+
 ```
 
-The `Editor` interface provides a simple text editor UI with various functionalities such as displaying text, handling user input, and performing text operations. You will use this interface to create a text editor application. You do not need to modify this interface.
-
-The `AbstractEditor` class provides a partial implementation of the `Editor` interface, handling common functionalities and leaving specific implementations to subclasses. You do not need to modify this abstract class.
-
-The `SimpleEditor` class is a concrete implementation of the `Editor` interface, providing a basic text editor UI. You do not need to modify this concrete class.
-
-Use the `Editor` interface to interact with the text editor UI in your application.
-
-The `Main.java` file is where you will implement your text editor application using the `Editor` interface. An `Editor` object named `ui` has been created for you. Although its declared type is `Editor`, it is actually an instance of `SimpleEditor`. Remember that the declared type determines which methods are accessible, while the actual type determines which implementation runs at runtime. In this case, `Editor` is the supertype (interface) of `SimpleEditor`, so you can call any method defined in the `Editor` interface on the `ui` object.
-
-
-Example usage:
-
-```java
-ui.show(); // Display the editor window
-ui.setText("Hello, World!"); // Set initial text
-String currentText = ui.getText(); // Get current text
-ui.alert("Current text: " + currentText); // Show an alert with the current text
-String s = ui.prompt("Enter some input:"); // Prompt the user for input and store the response
-ui.highlight("World"); // Highlight the word "World"
-ui.replace("World", "Java"); // Replace "World" with "Java"
-ui.clearText(); // Clear all text
-```
-
-We will go over the structure of the `Editor` interface and its methods in class.
-
-
 ## Methods
 
 ### void show()
@@ -156,6 +129,31 @@ We will go over the structure of the `Editor` interface and its methods in class
       - `text`: Input text (String)
     - **Returns:** Array of words (String[])
 
+The `Editor` interface provides a simple text editor UI with various functionalities such as displaying text, handling user input, and performing text operations. You will use this interface to create a text editor application. You do not need to modify this interface.
+
+The `AbstractEditor` class provides a partial implementation of the `Editor` interface, handling common functionalities and leaving specific implementations to subclasses. You do not need to modify this abstract class.
+
+The `SimpleEditor` class is a concrete implementation of the `Editor` interface, providing a basic text editor UI. You do not need to modify this concrete class.
+
+Use the `Editor` interface to interact with the text editor UI in your application.
+
+The `Main.java` file is where you will implement your text editor application using the `Editor` interface. An `Editor` object named `ui` has been created for you. Although its declared type is `Editor`, it is actually an instance of `SimpleEditor`. Remember that the declared type determines which methods are accessible, while the actual type determines which implementation runs at runtime. In this case, `Editor` is the supertype (interface) of `SimpleEditor`, so you can call any method defined in the `Editor` interface on the `ui` object.
+
+
+Example usage:
+
+```java
+ui.show(); // Display the editor window
+ui.setText("Hello, World!"); // Set initial text
+String currentText = ui.getText(); // Get current text
+ui.alert("Current text: " + currentText); // Show an alert with the current text
+String s = ui.prompt("Enter some input:"); // Prompt the user for input and store the response
+ui.highlight("World"); // Highlight the word "World"
+ui.replace("World", "Java"); // Replace "World" with "Java"
+ui.clearText(); // Clear all text
+```
+
+We will go over the structure of the `Editor` interface and its methods in class.
 
 ## Compile the Program
 To compile the program, navigate to the `TextEditor` directory in your terminal and run the following command:
