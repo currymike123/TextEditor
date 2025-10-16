@@ -1,4 +1,6 @@
-# Simple Editor UI Documentation
+# Text Editor UI Documentation
+
+---
 
 ### UML Diagram 
 
@@ -66,6 +68,8 @@
 +-----------------------------------------------+
 ```
 
+---
+
 ### Methods
 
 #### void show()
@@ -129,6 +133,10 @@
       - `text`: Input text (String)
     - **Returns:** Array of words (String[])
 
+---
+
+### Overview
+
 The `Editor` interface provides a simple text editor UI with various functionalities such as displaying text, handling user input, and performing text operations. You will use this interface to create a text editor application. You do not need to modify this interface.
 
 The `AbstractEditor` class provides a partial implementation of the `Editor` interface, handling common functionalities and leaving specific implementations to subclasses. You do not need to modify this abstract class.
@@ -155,7 +163,9 @@ ui.clearText(); // Clear all text
 
 We will go over the structure of the `Editor` interface and its methods in class.
 
-## Compile the Program
+---
+
+### Compile the Program
 To compile the program, navigate to the `TextEditor` directory in your terminal and run the following command:
 
 ```bash
