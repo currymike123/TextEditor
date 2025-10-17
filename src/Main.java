@@ -100,6 +100,14 @@ public class Main {
         
     });
 
+    // LOAD FILE BUTTON
+    // Purpose: load text from a file into the editor.
+    ui.addButton("Load File", () -> {
+        // TODO: implement file loading logic
+        // ADD CODE HERE!
+        
+    });
+
     // Load demo text for testing.
     ui.addButton("Load Demo", () -> ui.setText(
         "If you’re going to try, go all the way.\n" +
@@ -122,6 +130,8 @@ public class Main {
         "– Charles Bukowski"
 
     ));
+
+  
 
 
     ui.show();
